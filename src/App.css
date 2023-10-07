@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  position: relative;
+}
+
+::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.background {
+  position: absolute;
+  z-index: -2;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 100vh;
+  border: 2px solid cyan;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+/* form div{
+    border: 1px solid cyan;
+} */
+
+form div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+form div input::placeholder {
+  padding-left: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: hsl(270, 3%, 87%);
+}
+
+.namenum input {
+  width: 100%;
+  padding: 0.7rem 0;
+  border-radius: 10px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+h3 {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.19rem;
+}
+
+.expcvc {
+  /* display: flex; */
+  /* border: 1px solid cyan; */
+}
+
+.expcvc div {
+  /* display: inline-block; */
+  /* border: 1px solid cyan; */
+}
+
+.exp {
+  display: inline-block;
+}
+
+.exp input{
+    padding: 0.6rem 0.2rem;
+    border-radius: 10px;
+    border: 1px solid hsl(270, 3%, 87%);
+}
+
+.exp input:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+.mm {
+  width: 20%;
+}
+
+.yy {
+  width: 20%;
+}
+
+.cvc input {
+  width: 50%;
+  padding: 0.6rem 0;
+  border-radius: 10px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+.front {
+  margin-bottom: 2rem;
+  width: 450px;
+}
+
+.back {
+  margin-left: 6rem;
+  width: 450px;
+}
+
+.button button {
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  border: 0px;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+}
+
+.holder{
+    color: white;
+    position: absolute;
+    top: 340px;
+    left: 280px;
+}
+
+.num{
+    color: white;
+    position: absolute;
+    top: 265px;
+    left: 280px;
+    letter-spacing: 0.4rem;
+}
+
+.month{
+    color: white;
+    position: absolute;
+    top: 340px;
+    left: 600px;
+}
+
+.year{
+    color: white;
+    position: absolute;
+    top: 340px;
+    left: 625px;
+}
+
+.cvcnum{
+    color: white;
+    position: absolute;
+    right: 700px;
+    bottom: 250px;
+}
