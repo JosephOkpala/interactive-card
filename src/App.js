@@ -1,9 +1,21 @@
-import './App.css';
+import "./App.css";
+import Card from "./components/Card";
+import CardInfo from "./components/CardInfo";
+import background from "./images/bg-main-desktop.png";
 
 function App() {
   return (
     <div className="App">
-      <h1>Card</h1>
+      <img
+        style={{ height: "100vh" }}
+        src={background}
+        alt=""
+        className="background"
+      />
+      <div className="card-container">
+        <Card />
+        <CardInfo />
+      </div>
     </div>
   );
 }
